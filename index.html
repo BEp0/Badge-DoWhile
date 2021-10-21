@@ -27,29 +27,29 @@
                     <img src="https://lorempixel.com/185/185/people/" alt=""> // random images
                 -->
             </div>
-            <h1>Bernardo Porto</h1>
+            <h1 id="userName">Bernardo Porto</h1>
             <a href="https://github.com/BEp0/" target="_blank">
                 <img src="images/github.svg" alt="github icon">
                 BEp0
             </a>
             <p>An instructor focused on helping pople start programming for web</p>
-            <ul>
-                <li>
+            <ul id="socialLinks">
+                <li class="linkedin">
                     <a href="https://www.youtube.com/" target="_blank">
                         <img src="images/youtube.svg" alt="youtube icon">
                     </a>
                 </li>
-                <li>
+                <li class="linkedin">
                     <a href="https://www.instagram.com/" target="_blank">
                         <img src="images/intagram.svg" alt="instagram icon">
                     </a>
                 </li>
-                <li>
+                <li class="github">
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="images/facebook.svg" alt="facebook icon">
                     </a>
                 </li>
-                <li>
+                <li class="github">
                     <a href="https://www.twitter.com/" target="_blank">
                         <img src="images/twitter.svg" alt="twitter icon">
                     </a>
@@ -57,6 +57,27 @@
             </ul>
         </div>
     </main>
+    <script>
+
+        //object
+        const LinksSocialMidia = {
+            github: "BEp0",
+            linkedin: "in/bep0"
+        }
+
+        //function
+        function changeSocialMediaLinks() {
+            for (let li of socialLinks.children) {
+                const social = li.getAttribute('class')
+                //alert(social)
+                li.children[0].href = `https://www.${social}.com/${LinksSocialMidia[social]}`
+                alert(li.children[0].href)
+            }
+        }
+
+        changeSocialMediaLinks()
+
+    </script>
 </body>
 
 </html>

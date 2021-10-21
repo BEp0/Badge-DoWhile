@@ -9,3 +9,9 @@ This was an event hosted by <a href="https://www.rocketseat.com.br/">RocketSeat<
 - Revised what is HTML and CSS
 - How write correctly both languages
 - Explain about unity of measure
+
+## 3rd day:
+- Explained what is D.O.M.
+- Difference between const and let
+- How make objects and what is this
+- Difference between camelCase, PascalCase, snake_case
