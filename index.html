@@ -22,17 +22,14 @@
                 <span>
                     <img src="images/build.svg" alt="stamp RocketSeat">
                 </span>
-                <img src="https://avatars.githubusercontent.com/u/72446326?v=4" alt="Personal photo">
-                <!--
-                    <img src="https://lorempixel.com/185/185/people/" alt=""> // random images
-                -->
+                <img id="userPhoto" src="https://lorempixel.com/185/185/people/" alt="Personal photo">
             </div>
-            <h1 id="userName">Bernardo Porto</h1>
-            <a href="https://github.com/BEp0/" target="_blank">
+            <h1 id="userName">Bernardo</h1>
+            <a id="userLink" href="https://github.com/BEp0/" target="_blank">
                 <img src="images/github.svg" alt="github icon">
                 BEp0
             </a>
-            <p>An instructor focused on helping pople start programming for web</p>
+            <p id="bio">An instructor focused on helping pople start programming for web</p>
             <ul id="socialLinks">
                 <li class="linkedin">
                     <a href="https://www.youtube.com/" target="_blank">
@@ -57,27 +54,8 @@
             </ul>
         </div>
     </main>
-    <script>
-
-        //object
-        const LinksSocialMidia = {
-            github: "BEp0",
-            linkedin: "in/bep0"
-        }
-
-        //function
-        function changeSocialMediaLinks() {
-            for (let li of socialLinks.children) {
-                const social = li.getAttribute('class')
-                //alert(social)
-                li.children[0].href = `https://www.${social}.com/${LinksSocialMidia[social]}`
-                alert(li.children[0].href)
-            }
-        }
-
-        changeSocialMediaLinks()
-
-    </script>
+    <script src="main.js"></script>
+    <!--put it down here to be able access the DOM-->
 </body>
 
 </html>
