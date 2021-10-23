@@ -21,3 +21,10 @@ This was an event hosted by <a href="https://www.rocketseat.com.br/">RocketSeat<
 - What's a API and how use it
 - What's a JSON and what you can do
 - How use GitHub Pages
+
+## 5th day: The Last
+- ID and class review
+- How use svg background (bug repair)
+- Mobile adjustment
+- Challenge: make desktop version
+- How continue run
