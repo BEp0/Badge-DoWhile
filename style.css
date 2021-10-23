@@ -9,6 +9,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: hsl(240, 6%, 8%);
 }
 
 body {
@@ -18,12 +19,15 @@ body {
 
 }
 main{
-    background: url(images/background-green.svg)no-repeat center/cover;  /*function than can add svg background*/
+    background: url(images/background-blue.svg)no-repeat center/cover;  /*function than can add svg background*/
     width: 100vw;
-    min-height: 812px;
-    /*break points and at rule - search*/
     height:  100vh;
+    min-height: 712px;
+    /*break points and at rule - search*/
     max-width: 500px;
+    max-height: 1000px;
+    border-radius: 25px;
+    margin: auto;
 }
 
 .container{
