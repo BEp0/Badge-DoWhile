@@ -18,9 +18,12 @@ body {
 
 }
 main{
-    background: url(images/background.png); /*function than can add svg background*/
-    width: 375px;
-    height:  812px;
+    background: url(images/background-green.svg)no-repeat center/cover;  /*function than can add svg background*/
+    width: 100vw;
+    min-height: 812px;
+    /*break points and at rule - search*/
+    height:  100vh;
+    max-width: 500px;
 }
 
 .container{
